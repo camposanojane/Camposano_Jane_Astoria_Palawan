@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Astoria Palawan</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+</head>
+<body>
+
+    <header class="font-bold">
+      
+        <nav class="flex justify-between items-center px-8 py-3 text-lg text-emerald-800 bg-zinc-300 bg-opacity-40 max-md:px-5">
+            <img src="assets/images/logo.webp" alt="Astoria Palawan Logo" class="rounded-full w-14 h-14" />
+              <div class="flex gap-3 text-sm">
+                  <a href="/src/index.html" class="hover:text-white">HOME</a>
+                  <a href="/src/accommodation.html" class="hover:text-white">ACCOMMODATIONS</a>
+                  <a href="/src/amenities.html" class="hover:text-white">AMENITIES</a>
+                  <a href="/src/book.html" class="hover:text-white">BOOK</a>
+                  <a href="/src/contactUs.html" class="hover:text-white">CONTACT US</a>
+              </div>
+        </nav>
+    
+       
+        <div class="relative flex items-center w-full min-h-[60vh] max-md:min-h-[50vh]">
+            <img src="assets/images/Contactus.webp" alt="Contact Us Background" class="absolute inset-0 w-full h-full object-cover" />
+    
+            <div class="absolute left-4 top-1/2 transform -translate-y-1/2 max-w-xs p-4 bg-white/70 backdrop-blur-sm rounded-lg text-center">
+                <h1 class="text-2xl font-semibold">CONTACT US</h1>
+                <p class="mt-4 text-base leading-snug">
+                    Astoria Palawan is a beachfront resort in Puerto Princesa, offering luxury stays, a water park, and stunning views.
+                </p>
+            </div>
+        </div>
+    </header>
+    
+
+
+    <main class="flex justify-center items-center py-8">
+        <form class="flex flex-wrap gap-4 justify-center items-center p-4 bg-teal-500 rounded-lg shadow-lg w-full max-w-[800px]">
+            <div class="flex flex-col gap-1.5 max-sm:w-full">
+                <label for="check-in" class="text-sm font-medium text-white">CHECK IN</label>
+                <input type="date" id="check-in" name="check-in" class="p-1.5 text-sm rounded bg-white border-none" />
+            </div>
+            <div class="flex flex-col gap-1.5 max-sm:w-full">
+                <label for="nights" class="text-sm font-medium text-white">NIGHTS</label>
+                <input type="number" id="nights" name="nights" value="1" min="1" class="p-1.5 text-sm rounded bg-white border-none w-[60px]" />
+            </div>
+            <div class="flex flex-col gap-1.5 max-sm:w-full">
+                <label for="adults" class="text-sm font-medium text-white">ADULTS</label>
+                <input type="number" id="adults" name="adults" value="1" min="1" class="p-1.5 text-sm rounded bg-white border-none w-[60px]" />
+            </div>
+            <div class="flex flex-col gap-1.5 max-sm:w-full">
+                <label for="children" class="text-sm font-medium text-white">CHILDREN</label>
+                <input type="number" id="children" name="children" value="0" min="0" class="p-1.5 text-sm rounded bg-white border-none w-[60px]" />
+            </div>
+            <a href="book.html" class="px-4 py-2 text-sm text-white bg-emerald-700 hover:bg-emerald-800 rounded-lg shadow-md inline-block text-center">
+                SUBMIT
+            </a>
+        </form>
+    </main>
+
+    <article class="flex mx-auto my-8 max-w-[1000px] bg-white shadow-md rounded-lg overflow-hidden max-md:flex-col">
+        <section>
+            <iframe
+            class="w-full h-full rounded-lg"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3922.222125270391!2d119.3976642751044!3d10.839460189303803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b5602ea829b6b3%3A0x365629d92a3e23ac!2sAstoria%20Palawan!5e0!3m2!1sen!2sph!4v1710261299382"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+    
+        <form class="flex flex-col gap-4 p-5 bg-white shadow-md rounded-lg w-full">
+            <input
+                type="text"
+                id="name"
+                name="name"
+                class="w-full p-3 text-base font-medium text-teal-600 bg-zinc-200 rounded"
+                placeholder="Name"
+            />
+        
+            <h2 class="text-lg font-medium text-emerald-800">Inquire For</h2>
+                <div class="flex flex-col gap-2">
+                    <button class="flex items-center gap-2 group" onclick="handleClick('About Astoria Palawan')">
+                        <span class="w-4 h-4 bg-teal-500 rounded-full group-hover:bg-teal-700 transition-all"></span>
+                        <span class="text-base text-black group-hover:text-teal-700">About Astoria Palawan</span>
+                    </button>
+                    <button class="flex items-center gap-2 group" onclick="handleClick('Promos')">
+                        <span class="w-4 h-4 bg-teal-500 rounded-full group-hover:bg-teal-700 transition-all"></span>
+                        <span class="text-base text-black group-hover:text-teal-700">Promos</span>
+                    </button>
+                    <button class="flex items-center gap-2 group" onclick="handleClick('Tours')">
+                        <span class="w-4 h-4 bg-teal-500 rounded-full group-hover:bg-teal-700 transition-all"></span>
+                        <span class="text-base text-black group-hover:text-teal-700">Tours</span>
+                    </button>
+                </div>
+
+                <script>
+                function handleClick(option) {
+                    alert("You selected: " + option);
+                }
+                </script>
+
+        
+            <input
+                type="email"
+                id="email"
+                name="email"
+                class="w-full p-3 text-base font-medium text-teal-600 bg-zinc-200 rounded"
+                placeholder="Email"
+            />
+        
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="w-full p-3 text-base font-medium text-teal-600 bg-zinc-200 rounded"
+                placeholder="Mobile Phone"
+            />
+        
+            <textarea
+                id="message"
+                name="message"
+                class="w-full p-3 text-base font-medium text-teal-600 bg-zinc-200 rounded h-[80px]"
+                placeholder="Message"
+            ></textarea>
+        
+            <button
+                type="submit"
+                class="text-lg font-bold text-white bg-teal-500 hover:bg-teal-600 transition-all py-3 rounded"
+            >
+                SUBMIT
+            </button>
+            </form>    
+        </article>
+
+        <section class="px-10 pt-10 pb-16 w-full bg-amber-50 max-md:px-5 max-md:max-w-full">
+            <div class="flex gap-4 max-md:flex-col">
+            <div class="w-[60%] max-md:w-full">
+                <div class="flex flex-col text-xl font-medium text-emerald-800 max-md:mt-8 max-md:max-w-full">
+                <header class="text-2xl font-semibold text-teal-500">VISIT US</header>
+                <address class="mt-3 not-italic max-md:max-w-full">
+                    Km. 62, North National Highway, Barangay San Rafael, Puerto Princesa City, Palawan, Philippines 5300
+                </address>
+        
+                <header class="mt-10 text-2xl font-semibold text-teal-500 max-md:mt-8">CONTACT US</header>
+                
+                <div class="contact-info text-base">
+                    <p class="mt-5">Reservations and Sales Office Hours: 8 AM - 6 PM</p>
+                    
+                    <address class="mt-4 not-italic">
+                    Reservations Office<br>
+                    reservations@astoriapalawan.com<br>
+                    (+632) 8687-1111 loc. 8302 | (+63) 998-961-3419
+                    </address>
+        
+                    <address class="mt-4 not-italic">
+                    Corporate Sales Office<br>
+                    sales@astoriapalawan.com<br>
+                    (+632) 8687-1111 loc. 8016 | (+63) 917-559-4341
+                    </address>
+        
+                    <address class="mt-4 not-italic">
+                    Palawan Sales Office<br>
+                    sales.ppc@astoria.com.ph<br>
+                    (+63) 998-597-6831 | (+63) 917-585-4425 | (+63) 998-571-1625
+                    </address>
+        
+                    <address class="mt-4 not-italic">
+                    Palawan Front Office<br>
+                    (+63) 998-961-3422
+                    </address>
+                </div>
+                </div>
+            </div>
+        
+            <div class="w-[40%] max-md:w-full">
+                <div class="flex flex-col text-xl font-semibold text-emerald-800 max-md:mt-8">
+                <header class="text-2xl text-teal-500">QUICK LINKS</header>
+                <nav class="mt-6">
+                    <ul class="mt-6 space-y-4 text-xl font-medium text-emerald-800">
+                        <li><a href="/src/index.html" class="hover:text-teal-500">HOME</a></li>
+                        <li><a href="/src/accommodation.html" class="hover:text-teal-500">ACCOMMODATIONS</a></li>
+                        <li><a href="/src/amenities.html" class="hover:text-teal-500">AMENITIES</a></li>
+                        <li><a href="/src/contactUs.html" class="hover:text-teal-500">CONTACT US</a></li>
+                    </ul>
+                </nav>
+        
+                <footer class="mt-14 max-md:mt-8">
+                    <header class="text-2xl text-teal-500">STAY CONNECTED</header>
+                    <div class="social-links mt-6 flex space-x-4">
+                        <a href="https://www.facebook.com/astoriapalawan"><img src="assets/images/facebook.webp" alt="Facebook" class="w-12 rounded-full"></a>
+                        <a href="https://www.instagram.com/astoriapalawan/s"><img src="assets/images/Instagram.webp" alt="Instagram" class="w-12 rounded-full"></a>
+                    </div>
+                </footer>
+                </div>
+            </div>
+            </div>
+        </section>
+    </body>
+</html>

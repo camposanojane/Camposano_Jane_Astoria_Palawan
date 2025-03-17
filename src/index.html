@@ -1,0 +1,279 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>Astoria Palawan</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+</head>
+<body class="bg-gray-100">
+    <header class="font-bold">
+        
+        <nav class="flex justify-between items-center px-8 py-3 text-lg text-emerald-800 bg-zinc-300 bg-opacity-40 max-md:px-5">
+          <img src="assets/images/logo.webp" alt="Astoria Palawan Logo" class="rounded-full w-14 h-14" />
+            <div class="flex gap-3 text-sm">
+                <a href="/src/index.html" class="hover:text-white">HOME</a>
+                <a href="/src/accommodation.html" class="hover:text-white">ACCOMMODATIONS</a>
+                <a href="/src/amenities.html" class="hover:text-white">AMENITIES</a>
+                <a href="/src/book.html" class="hover:text-white">BOOK</a>
+                <a href="/src/contactUs.html" class="hover:text-white">CONTACT US</a>
+            </div>
+        </nav>
+    
+      
+        <div class="relative flex items-center w-full min-h-[60vh] max-md:min-h-[50vh]">
+            <img src="assets/images/Home.webp" 
+                 alt="Accommodation Background" 
+                 class="absolute inset-0 w-full h-full object-cover" />
+    
+                 <div class="absolute top-2/4 left-2/4 px-5 w-full text-center -translate-x-2/4 -translate-y-2/4">
+                  <h1 class="text-6xl font-extrabold leading-tight text-amber-50 max-lg:text-5xl max-md:text-4xl max-sm:text-3xl">
+                      Discover The Key <br /> Attributes Of Astoria Palawan
+                  </h1>
+                  <div class="mt-10">
+                      <button  s class="px-8 py-3 text-2xl font-bold text-white bg-emerald-800 rounded hover:bg-emerald-700 focus:ring-2 focus:ring-emerald-500 focus:outline-none transition duration-300">
+                          BOOK NOW
+                      </button>
+                  </div>
+              </div>
+              
+        </div>
+    </header>
+    
+    <main class="flex justify-center items-center py-8">
+        <form class="flex flex-wrap gap-4 justify-center items-center p-4 bg-teal-500 rounded-lg shadow-lg w-full max-w-[800px]">
+            <div class="flex flex-col gap-1.5 max-sm:w-full">
+                <label for="check-in" class="text-sm font-medium text-white">CHECK IN</label>
+                <input type="date" id="check-in" name="check-in" class="p-1.5 text-sm rounded bg-white border-none" />
+            </div>
+            <div class="flex flex-col gap-1.5 max-sm:w-full">
+                <label for="nights" class="text-sm font-medium text-white">NIGHTS</label>
+                <input type="number" id="nights" name="nights" value="1" min="1" class="p-1.5 text-sm rounded bg-white border-none w-[60px]" />
+            </div>
+            <div class="flex flex-col gap-1.5 max-sm:w-full">
+                <label for="adults" class="text-sm font-medium text-white">ADULTS</label>
+                <input type="number" id="adults" name="adults" value="1" min="1" class="p-1.5 text-sm rounded bg-white border-none w-[60px]" />
+            </div>
+            <div class="flex flex-col gap-1.5 max-sm:w-full">
+                <label for="children" class="text-sm font-medium text-white">CHILDREN</label>
+                <input type="number" id="children" name="children" value="0" min="0" class="p-1.5 text-sm rounded bg-white border-none w-[60px]" />
+            </div>
+            <a href="book.html" class="px-4 py-2 text-sm text-white bg-emerald-700 hover:bg-emerald-800 rounded-lg shadow-md inline-block text-center">
+                SUBMIT
+            </a>
+        </form>
+    </main>
+
+    <section class="w-full bg-stone-100 py-14 px-4 flex flex-col justify-center items-center">
+        <header class="text-center">
+            <h2 class="mb-2 text-lg font-semibold text-red-500 max-sm:text-base">RECONNECT WITH NATURE</h2>
+            <h1 class="mb-6 text-3xl font-semibold text-teal-500 max-md:text-2xl max-sm:text-2xl">HOTEL IN PALAWAN</h1>
+        </header>
+        <p class="mb-4 text-base font-medium text-center max-w-[800px]">
+            Astoria Palawan is an eight-hectare resort in the heart of Puerto Princesa, offering an escape into nature’s beauty. With luxurious accommodations and world-class hospitality, guests can unwind in a tranquil setting surrounded by lush landscapes and pristine beaches.
+        </p>
+        <p class="mb-4 text-base font-medium text-center max-w-[800px]">
+            Nestled along the Sulu Sea, our resort offers breathtaking views and a variety of activities, from island hopping and snorkeling to forest treks and cultural tours. Experience the wonders of Palawan while indulging in comfort and relaxation.
+        </p>
+        <p class="mb-4 text-base font-medium text-center max-w-[800px]">
+            Whether you seek adventure or serenity, Astoria Palawan is the perfect retreat where cherished memories are made amidst nature’s finest offerings.
+        </p>
+    </section>
+
+    <section class="flex gap-6 max-md:flex-col">
+        <article class="w-1/2 max-md:w-full">
+            <div class="relative flex flex-col justify-center px-12 py-10 text-white min-h-[350px] font-semibold max-md:px-6 max-md:py-8 overflow-hidden group">
+                <img src="assets/images/the alcove.webp" alt="The Alcove Room" class="absolute inset-0 object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-105 cursor-pointer">
+                
+                <div class="absolute bottom-4 left-4 max-w-xs md:max-w-sm sm:max-w-[60%] p-3 md:p-2 sm:p-1 bg-white/40 backdrop-blur-sm rounded-lg sm:bottom-2 sm:left-2">
+                    <h2 class="text-xl md:text-lg sm:text-sm font-bold text-teal-500 hover:text-white">
+                        THE ALCOVE ROOM
+                    </h2>
+                    <p class="mt-2 text-base md:text-sm sm:text-xs text-teal-500 hover:text-white">
+                        Find rest and relaxation in our annex rooms.
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        
+        <article class="w-1/2 max-md:w-full">
+            <div class="relative flex flex-col justify-center px-12 py-10 text-white min-h-[350px] font-semibold max-md:px-6 max-md:py-8 overflow-hidden group">
+                <img src="assets/images/the nest.webp" alt="The Nest Room" class="absolute inset-0 object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-105 cursor-pointer">
+                
+                <div class="absolute bottom-4 left-4 max-w-xs md:max-w-sm sm:max-w-[60%] p-3 md:p-2 sm:p-1 bg-white/40 backdrop-blur-sm rounded-lg sm:bottom-2 sm:left-2">
+                    <h2 class="text-xl md:text-lg sm:text-sm font-bold text-teal-500 hover:text-white">
+                        THE NEST ROOM
+                    </h2>
+                    <p class="mt-2 text-base md:text-sm sm:text-xs text-teal-500 hover:text-white">
+                        Find rest and relaxation in our annex rooms.
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </section>
+    <br>
+    <section class="relative w-full h-[500px] md:h-[400px] sm:h-[300px] overflow-hidden">
+     
+        <div id="slider" class="relative flex w-full h-full transition-transform duration-[1000ms] ease-in-out">
+            <img src="assets/images/Halo Dome.webp" alt="Halo Dome" class="slide object-cover w-full h-full absolute inset-0 opacity-100 transition-opacity duration-[1000ms]">
+            <img src="assets/images/halo dome2.webp" alt="Second Image" class="slide object-cover w-full h-full absolute inset-0 opacity-0 transition-opacity duration-[1000ms]">
+            <img src="assets/images/halo dome3.webp" alt="Third Image" class="slide object-cover w-full h-full absolute inset-0 opacity-0 transition-opacity duration-[1000ms]">
+        </div>
+    
+      
+        <div class="flex justify-between items-center w-full mt-4 px-6 sm:px-2">
+            <button id="prev" class="bg-black/50 text-white p-4 md:p-3 rounded-full hover:bg-black sm:p-2">
+                &#10094;
+            </button>
+            <button id="next" class="bg-black/50 text-white p-4 md:p-3 rounded-full hover:bg-black sm:p-2">
+                &#10095;
+            </button>
+        </div>
+    
+   
+        <article class="absolute bottom-4 left-4 max-w-xs md:max-w-md lg:max-w-lg p-4 md:p-3 sm:p-2 bg-white/50 backdrop-blur-sm rounded-lg sm:max-w-full sm:bottom-2 sm:left-2">
+            <h1 class="text-2xl md:text-xl sm:text-lg font-bold text-black hover:text-white">
+                THE HALO DOME
+            </h1>
+            <p class="mt-2 text-lg md:text-base sm:text-sm text-black hover:text-white">
+                Looking to unwind with your favorite cocktail? Halo Dome is the perfect spot.
+            </p>
+        </article>
+        
+    </section>
+    
+  
+    <script>
+        let index = 0;
+        const slides = document.querySelectorAll(".slide");
+        const totalSlides = slides.length;
+    
+        function showSlide(i) {
+            slides.forEach((slide, idx) => {
+                slide.style.opacity = idx === i ? "1" : "0";
+            });
+            index = i;
+        }
+    
+        document.getElementById("prev").addEventListener("click", () => {
+            index = (index - 1 + totalSlides) % totalSlides;
+            showSlide(index);
+        });
+    
+        document.getElementById("next").addEventListener("click", () => {
+            index = (index + 1) % totalSlides;
+            showSlide(index);
+        });
+    
+        setInterval(() => {
+            index = (index + 1) % totalSlides;
+            showSlide(index);
+        }, 5000); // Auto-slide every 5 seconds
+    
+        showSlide(index); // Initialize first slide
+    </script>
+    
+    <section class="flex items-center gap-8 px-10 py-12 max-w-[1350px] mx-auto max-md:flex-col">
+        <article class="flex flex-col gap-6 px-12 py-14 bg-red-500 w-[500px] h-[450px] text-white max-md:w-full max-md:h-auto">
+          <h1 class="text-5xl font-extrabold text-teal-500 max-md:text-4xl">KAYAKING</h1>
+          <p class="text-2xl font-medium max-md:text-xl">Enjoy kayaking and other exciting activities in Palawan.</p>
+        </article>
+        <img src="assets/images/Kayaking.webp" alt="People kayaking" class="object-cover w-[700px] h-[450px] max-md:w-full max-md:h-auto ">
+    </section>
+
+    <section class="flex w-full h-[520px] max-md:flex-col max-md:h-auto">
+        <article class="relative w-[45%] h-full max-md:w-full max-md:h-[400px]">
+          <img src="assets/images/Waterpark_home.webp" alt="Waterpark" class="object-cover w-full h-full">
+          <div class="absolute inset-0 flex justify-center items-center bg-black/50">
+            <div class="p-10 text-white">
+              <h1 class="text-4xl font-bold">PALAWAN WATER PARK BY ASTORIA</h1>
+              <h2 class="mt-4 text-2xl font-semibold max-md:text-xl">Experience Puerto Princesa's first and only waterpark</h2>
+              <button class="mt-6 px-6 py-2 bg-red-500 text-2xl font-bold hover:bg-red-600 transition">EXPLORE</button>
+            </div>
+          </div>
+        </article>
+        <article class="w-[55%] h-full max-md:w-full max-md:h-[400px]">
+          <img src="assets/images/Waterpark2_home.webp" alt="Waterpark slides" class="object-cover w-full h-full">
+        </article>
+    </section>
+
+    <section class="flex items-center gap-8 px-10 py-12 max-w-[1350px] mx-auto max-md:flex-col">
+        <article class="flex flex-col gap-6 px-12 py-14 bg-red-500 w-[500px] h-[450px] text-white max-md:w-full max-md:h-auto">
+          <h1 class="text-5xl font-extrabold text-teal-500 max-md:text-4xl">SPA</h1>
+          <p class="text-2xl font-medium max-md:text-xl">Relax and rejuvenate with our luxurious spa treatments.</p>
+        </article>
+        <img src="assets/images/Spa.webp" alt="Spa treatment" class="object-cover w-[700px] h-[450px] max-md:w-full max-md:h-auto">
+    </section>
+
+    <section class="relative w-full h-[500px] max-md:h-auto overflow-hidden">
+        <img src="assets/images/Gym.webp" 
+             alt="Gym" 
+             class="object-cover w-full h-full">
+        
+        <article class="absolute bottom-4 left-4 max-w-xs p-4 bg-white/50 backdrop-blur-sm rounded-lg">
+            <h1 class="text-2xl font-bold text-black-500 max-sm:text-xl hover:text-white">GYM</h1>
+            <p class="mt-2 text-lg text-black-500 max-sm:text-base hover:text-white">Our modern gym offers top-notch equipment for all your fitness needs.</p>
+        </article>
+    </section>
+
+    <section class="bg-amber-50 px-10 py-14 max-md:px-6">
+        <div class="flex gap-8 max-md:flex-col">
+            <div class="w-[60%] max-md:w-full">
+                <div class="flex flex-col text-xl font-medium text-emerald-800 max-md:mt-8 max-md:max-w-full">
+                  <header class="text-2xl font-semibold text-teal-500">VISIT US</header>
+                  <address class="mt-3 not-italic max-md:max-w-full">
+                    Km. 62, North National Highway, Barangay San Rafael, Puerto Princesa City, Palawan, Philippines 5300
+                  </address>
+          
+                  <header class="mt-10 text-2xl font-semibold text-teal-500 max-md:mt-8">CONTACT US</header>
+                  
+                  <div class="contact-info text-base">
+                    <p class="mt-5">Reservations and Sales Office Hours: 8 AM - 6 PM</p>
+                    
+                    <address class="mt-4 not-italic">
+                      Reservations Office<br>
+                      reservations@astoriapalawan.com<br>
+                      (+632) 8687-1111 loc. 8302 | (+63) 998-961-3419
+                    </address>
+          
+                    <address class="mt-4 not-italic">
+                      Corporate Sales Office<br>
+                      sales@astoriapalawan.com<br>
+                      (+632) 8687-1111 loc. 8016 | (+63) 917-559-4341
+                    </address>
+          
+                    <address class="mt-4 not-italic">
+                      Palawan Sales Office<br>
+                      sales.ppc@astoria.com.ph<br>
+                      (+63) 998-597-6831 | (+63) 917-585-4425 | (+63) 998-571-1625
+                    </address>
+          
+                    <address class="mt-4 not-italic">
+                      Palawan Front Office<br>
+                      (+63) 998-961-3422
+                    </address>
+                  </div>
+                </div>
+            </div>
+            
+          <div class="w-[40%] max-md:w-full">
+            <h2 class="text-2xl font-semibold text-teal-500">QUICK LINKS</h2>
+            <ul class="mt-6 space-y-4 text-xl font-medium text-emerald-800">
+              <li><a href="/src/accommodation.html" class="hover:text-teal-500">ACCOMMODATIONS</a></li>
+              <li><a href="/src/amenities.html" class="hover:text-teal-500">AMENITIES</a></li>
+              <li><a href="/src/book.html" class="hover:text-teal-500">BOOK NOW</a></li>
+              <li><a href="/src/contactUs.html" class="hover:text-teal-500">CONTACT US</a></li>
+            </ul>
+            <h2 class="mt-10 text-2xl font-semibold text-teal-500">STAY CONNECTED</h2>
+            <div class="social-links mt-6 flex space-x-4">
+              <a href="https://www.facebook.com/astoriapalawan"><img src="assets/images/facebook.webp" alt="Facebook" class="w-12 rounded-full"></a>
+              <a href="https://www.instagram.com/astoriapalawan/s"><img src="assets/images/Instagram.webp" alt="Instagram" class="w-12 rounded-full"></a>
+          </div>
+          </div>
+        </div>
+      </section>
+    </body>
+</html>
