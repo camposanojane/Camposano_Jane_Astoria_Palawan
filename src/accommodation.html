@@ -9,15 +9,15 @@
     </head>
     <body>
             <header class="font-bold">
-                <nav class="flex justify-between items-center px-8 py-3 text-lg text-emerald-800 bg-zinc-300 bg-opacity-40 max-md:px-5">
+                <nav class="fixed top-0 w-full z-50 flex justify-between items-center px-8 py-3 text-lg text-emerald-800 bg-zinc-300 bg-opacity-40 backdrop-blur-md max-md:px-5">
                     <img src="assets/images/logo.webp" alt="Astoria Palawan Logo" class="rounded-full w-14 h-14" />
-                      <div class="flex gap-3 text-sm">
-                          <a href="/src/index.html" class="hover:text-white">HOME</a>
-                          <a href="/src/accommodation.html" class="hover:text-white">ACCOMMODATIONS</a>
-                          <a href="/src/amenities.html" class="hover:text-white">AMENITIES</a>
-                          <a href="/src/book.html" class="hover:text-white">BOOK</a>
-                          <a href="/src/contactUs.html" class="hover:text-white">CONTACT US</a>
-                      </div>
+                    <div class="flex gap-3 text-sm">
+                        <a href="/src/index.html" class="hover:text-white">HOME</a>
+                        <a href="/src/accommodation.html" class="hover:text-white">ACCOMMODATIONS</a>
+                        <a href="/src/amenities.html" class="hover:text-white">AMENITIES</a>
+                        <a href="/src/book.html" class="hover:text-white">BOOK</a>
+                        <a href="/src/contactUs.html" class="hover:text-white">CONTACT US</a>
+                    </div>
                 </nav>
 
                 <div class="relative flex items-center w-full min-h-[60vh] max-md:min-h-[50vh]">
@@ -236,7 +236,7 @@
             </section>
 
     
-            <div id="booking-modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+            <div id="booking-modal" class="fixed inset-0 flex items-center justify-center hidden">
                 <div class="bg-white p-6 rounded-lg shadow-lg w-[500px] max-w-full">
                     <h2 class="text-xl font-semibold text-emerald-800 mb-4">Book Now</h2>
                     <form>
@@ -259,19 +259,30 @@
                     </form>
                 </div>
             </div>
-    
+            
+            <!-- Booking Button for Modal Trigger -->
+            <button aria-label="Book Superior Plus Room" class="px-4 py-2 bg-emerald-700 text-white rounded text-sm">
+                Book Superior Plus Room
+            </button>
+            
             <script>
+                // Handle opening the modal
                 document.querySelectorAll("button[aria-label='Book Superior Plus Room']").forEach(button => {
-                    button.addEventListener("click", () => {
+                    button.addEventListener("click", (event) => {
+                        // Open modal without affecting the background
                         document.getElementById("booking-modal").classList.remove("hidden");
+                        
+                        // Prevent any page navigation if the button is wrapped in a link
+                        event.preventDefault();
                     });
                 });
             
+                // Handle closing the modal
                 document.getElementById("close-modal").addEventListener("click", () => {
                     document.getElementById("booking-modal").classList.add("hidden");
                 });
             </script>
-    
+            
 
 
             

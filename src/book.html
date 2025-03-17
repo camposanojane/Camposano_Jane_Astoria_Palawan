@@ -9,15 +9,15 @@
 </head>
 <body>
         <header class="font-bold">
-            <nav class="flex justify-between items-center px-8 py-3 text-lg text-emerald-800 bg-zinc-300 bg-opacity-40 max-md:px-5">
+            <nav class="fixed top-0 w-full z-50 flex justify-between items-center px-8 py-3 text-lg text-emerald-800 bg-zinc-300 bg-opacity-40 backdrop-blur-md max-md:px-5">
                 <img src="assets/images/logo.webp" alt="Astoria Palawan Logo" class="rounded-full w-14 h-14" />
-                  <div class="flex gap-3 text-sm">
-                      <a href="/src/index.html" class="hover:text-white">HOME</a>
-                      <a href="/src/accommodation.html" class="hover:text-white">ACCOMMODATIONS</a>
-                      <a href="/src/amenities.html" class="hover:text-white">AMENITIES</a>
-                      <a href="/src/book.html" class="hover:text-white">BOOK</a>
-                      <a href="/src/contactUs.html" class="hover:text-white">CONTACT US</a>
-                  </div>
+                <div class="flex gap-3 text-sm">
+                    <a href="/src/index.html" class="hover:text-white">HOME</a>
+                    <a href="/src/accommodation.html" class="hover:text-white">ACCOMMODATIONS</a>
+                    <a href="/src/amenities.html" class="hover:text-white">AMENITIES</a>
+                    <a href="/src/book.html" class="hover:text-white">BOOK</a>
+                    <a href="/src/contactUs.html" class="hover:text-white">CONTACT US</a>
+                </div>
             </nav>
 
             <div class="relative flex items-center w-full min-h-[60vh] max-md:min-h-[50vh]">
@@ -67,9 +67,20 @@
                 <div class="bg-red-500 p-4">
                     <div class="flex flex-col md:flex-row gap-5">
                         <div class="md:w-1/2">
-                            <img src="assets/images/the nest.webp"
-                            class="bject-cover w-full h-[280px] max-md:h-[250px] rounded-l-lg max-md:rounded-t-lg max-md:rounded-l-none transition-transform duration-300 ease-in-out hover:scale-105">
+                            <div class="relative">
+                                <div class="overflow-hidden">
+                                    <div class="flex transition-transform duration-500 ease-in-out" id="slider_nest">
+                                        <img src="assets/images/the nest.webp" 
+                                            class="object-cover w-full h-[280px] max-md:h-[250px] rounded-l-lg max-md:rounded-t-lg max-md:rounded-l-none">
+                                        <img src="assets/images/the nest2.webp" 
+                                            class="object-cover w-full h-[280px] max-md:h-[250px] rounded-l-lg max-md:rounded-t-lg max-md:rounded-l-none">
+                                        <img src="assets/images/the nest3.webp" 
+                                            class="object-cover w-full h-[280px] max-md:h-[250px] rounded-l-lg max-md:rounded-t-lg max-md:rounded-l-none">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        
                         <div class="md:w-1/2">
                             <h1 class="text-2xl font-bold text-teal-500 hover:text-white transition-colors duration-300">
                                 THE NEST SUPERIOR PLUS ROOM
@@ -102,21 +113,37 @@
             </section>
         </article>
 
-        <section class="fixed top-[100px] right-10 w-[300px] h-auto bg-red-500 p-6 text-center text-white rounded-lg shadow-lg z-50">
-            <p>Tue, 11 Mar 25 – Wed, 12 Mar 25<br>1 night<br>1 room, 2 guests</p>
-            <hr class="my-4 border-white">
-            <p>Select a rate to continue</p>
-            <button class="mt-4 px-6 py-2 bg-teal-500 text-white font-bold hover:bg-teal-600">BOOK</button>
+        <section class="fixed top-[100px] right-10 w-[300px] max-w-full h-auto bg-teal-500 p-6 text-center text-white rounded-xl shadow-xl z-50">
+            <p class="text-lg font-semibold">Tue, 11 Mar 25 – Wed, 12 Mar 25</p>
+            <p class="text-sm mt-2">1 night<br>1 room, 2 guests</p>
+            <hr class="my-4 border-white opacity-40">
+            <p class="text-base">Select a rate to continue</p>
+            <button class="mt-6 w-full px-6 py-3 text-lg font-bold bg-teal-700 hover:bg-teal-800 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
+                BOOK NOW
+            </button>
         </section>
+        
 
         <article class="book-nest flex flex-col md:flex-row gap-5">
             <section class="md:w-2/3 w-full md:pl-10">
                 <div class="bg-red-500 p-4">
                     <div class="flex flex-col md:flex-row gap-5">
                         <div class="md:w-1/2">
-                            <img src="assets/images/the alcove.webp" 
-                            class="bject-cover w-full h-[280px] max-md:h-[250px] rounded-l-lg max-md:rounded-t-lg max-md:rounded-l-none transition-transform duration-300 ease-in-out hover:scale-105">
+                            <div class="relative">
+                                <div class="overflow-hidden">
+                                    <div class="flex transition-transform duration-500 ease-in-out" id="slider_alcove">
+                                        <img src="assets/images/the alcove.webp" 
+                                            class="object-cover w-full h-[280px] max-md:h-[250px] rounded-l-lg max-md:rounded-t-lg max-md:rounded-l-none">
+                                        <img src="assets/images/the alcove2.webp" 
+                                            class="object-cover w-full h-[280px] max-md:h-[250px] rounded-l-lg max-md:rounded-t-lg max-md:rounded-l-none">
+                                        <img src="assets/images/the alcove3.webp" 
+                                            class="object-cover w-full h-[280px] max-md:h-[250px] rounded-l-lg max-md:rounded-t-lg max-md:rounded-l-none">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        
+                        
                         <div class="md:w-1/2">
                             <h1 class="text-2xl font-bold text-teal-500 hover:text-white transition-colors duration-300">THE ALCOVE SUPERIOR PLUS ROOM</h1>
                             <div class="mt-4 text-white text-lg space-y-4">
@@ -151,9 +178,20 @@
                 <div class="bg-red-500 p-4">
                     <div class="flex flex-col md:flex-row gap-5">
                         <div class="md:w-1/2">
-                            <img src="assets/images/the villa.webp" 
-                            class="bject-cover w-full h-[280px] max-md:h-[250px] rounded-l-lg max-md:rounded-t-lg max-md:rounded-l-none transition-transform duration-300 ease-in-out hover:scale-105">
+                            <div class="relative">
+                                <div class="overflow-hidden">
+                                    <div class="flex transition-transform duration-500 ease-in-out" id="slider_villa">
+                                        <img src="assets/images/the villa.webp" 
+                                            class="object-cover w-full h-[280px] max-md:h-[250px] rounded-l-lg max-md:rounded-t-lg max-md:rounded-l-none">
+                                        <img src="assets/images/the villa2.webp" 
+                                            class="object-cover w-full h-[280px] max-md:h-[250px] rounded-l-lg max-md:rounded-t-lg max-md:rounded-l-none">
+                                        <img src="assets/images/the villa3.webp" 
+                                            class="object-cover w-full h-[280px] max-md:h-[250px] rounded-l-lg max-md:rounded-t-lg max-md:rounded-l-none">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
                         <div class="md:w-1/2">
                             <h1 class="text-2xl font-bold text-teal-500 hover:text-white transition-colors duration-300">THE VILLA SUPERIOR PLUS ROOM</h1>
                             <div class="mt-4 text-white text-lg space-y-4">
@@ -245,5 +283,48 @@
             </div>
             </div>
         </section>
+
+        <script>
+            let currentIndex_nest = 0;
+            let currentIndex_alcove = 0;
+            let currentIndex_villa = 0;
+        
+           
+            function autoSlide(sliderId, currentIndex) {
+                const images = document.querySelectorAll(`#${sliderId} img`);
+                const totalImages = images.length;
+                
+                
+                const firstImage = images[0].cloneNode(true);
+                document.getElementById(sliderId).appendChild(firstImage);
+        
+                function updateSlider() {
+                    const slider = document.getElementById(sliderId);
+                    const offset = -currentIndex * 100;  
+                    slider.style.transform = `translateX(${offset}%)`;
+        
+                    if (currentIndex === totalImages) {
+                        setTimeout(() => {
+                            slider.style.transition = 'none';  
+                            slider.style.transform = `translateX(0)`;  
+                            currentIndex = 0;  
+                            setTimeout(() => {
+                                slider.style.transition = 'transform 0.5s ease-in-out';  
+                            }, 50);  
+                        }, 500); 
+                    }
+                }
+        
+                
+                currentIndex = (currentIndex + 1) % totalImages;  
+                updateSlider();
+            }
+        
+           
+            setInterval(() => autoSlide('slider_nest', currentIndex_nest), 3000);
+            setInterval(() => autoSlide('slider_alcove', currentIndex_alcove), 3000);
+            setInterval(() => autoSlide('slider_villa', currentIndex_villa), 3000);
+        </script>
+        
     </body>
 </html>
